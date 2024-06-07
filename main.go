@@ -1,8 +1,25 @@
 package main
 
-import "github.com/luizengdev/gopportunities/router"
+import (
+	"github.com/luizengdev/gopportunities/config"
+	"github.com/luizengdev/gopportunities/router"
+)
+
+var (
+	logger *config.Logger
+)
 
 func main() {
-	// Initialize router
+	// initialize Logger
+	logger = config.GetLogger("main")
+
+	// initialize Config
+	err := config.Init()
+	if err != nil {
+		logger.Errorf("Error initializing config: %s", err)
+		return
+	}
+
+	// Initialize Router
 	router.Initialize()
 }
