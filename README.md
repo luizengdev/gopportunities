@@ -57,4 +57,4 @@ This project uses the following tools:
 
 ## Credits
 
-This project was developed following the tips from the live stream by [arthur404dev](https://github.com/arthur404dev).
+This project was developed following the tips from the live stream by [arthur404dev](https://www.youtube.com/watch?v=L6gk7FHBNkM).
